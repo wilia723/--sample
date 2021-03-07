@@ -64,6 +64,7 @@ img {
 @media screen and (max-width: 767px) {
   .header {
     height: 7rem;
+    margin-top: 5rem;
   }
 }
 
