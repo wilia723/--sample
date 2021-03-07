@@ -81,7 +81,7 @@ img {
   }
 }
 
-.header__title a {
+.header__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ img {
 @media screen and (max-width: 767px) {
   .page-title {
     font-size: 1.6rem;
-    white-space: nowrap;
+    margin-left: .5rem;
   }
 }
 
