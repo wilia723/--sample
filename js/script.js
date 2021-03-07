@@ -6,7 +6,7 @@ $(document).ready(function(){
   AOS.init({
     offset: 250,
     duration:700,
-    onece: true,
+    once: true,
   });
 
   // ハンバーガーメニュー
