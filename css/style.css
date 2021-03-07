@@ -284,6 +284,7 @@ img {
   background-repeat: no-repeat;
   background-size: 900px 900px;
   background-position: top -300px right -25px;
+  padding-top: 9.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -305,7 +306,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .mv__inner {
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     display: block;
     text-align: center;
