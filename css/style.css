@@ -111,7 +111,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -444,7 +444,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .media__body {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 
