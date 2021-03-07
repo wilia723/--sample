@@ -980,6 +980,12 @@ img {
 .alert-message.active {
   display: block;
 }
+.end-message {
+  display: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 .footer {
   padding-top: 4.5rem;
