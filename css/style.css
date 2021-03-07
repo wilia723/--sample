@@ -444,7 +444,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .media__body {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
