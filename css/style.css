@@ -63,7 +63,7 @@ img {
 }
 
 .header__inner {
-  padding: 2.4rem 2rem;
+  height: 9.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +77,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .header__inner {
-    padding: 1.5rem 0;
+    height: 7rem;
   }
 }
 
