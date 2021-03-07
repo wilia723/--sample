@@ -89,6 +89,12 @@ $('#form').submit(function(event){
     data: formData,
     type: "POST",
     dataType: "xml",
+    statusCode: {
+      0: function () {
+        $(".submitbtn").css("display", "none");
+        $(".end-message").fadeIn();
+      }
+    }
   });
   event.preventDefault();
 });
