@@ -61,6 +61,11 @@ img {
   -webkit-box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
           box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
 }
+@media screen and (max-width: 767px) {
+  .header {
+    height: 7rem;
+  }
+}
 
 .header__inner {
   padding: 2.4rem 2rem;
