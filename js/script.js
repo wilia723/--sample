@@ -1,8 +1,4 @@
 $(document).ready(function(){
-  $(function(){
-    var height=$('.header').height();
-    $('body').css('margin-top',height);
-  });
   AOS.init({
     offset: 250,
     duration:700,
