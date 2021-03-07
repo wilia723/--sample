@@ -1,4 +1,40 @@
-,.nav__text").on("click",function(){
+$(document).ready(function(){
+  $(function(){
+    var height=$('.header').height();
+    $('body').css('margin-top',height);
+  });
+  AOS.init({
+    offset: 250,
+    duration:700,
+    onece: true,
+  });
+
+  // ハンバーガーメニュー
+  $(function () {
+    $(".gnav-btn").on("click", function () {
+        $("#global-nav").toggleClass("open");
+        $("#bglayer").toggleClass("open");
+        $(this).toggleClass("open");
+    });
+  });
+  $(function () {
+    $("#bglayer").on("click", function () {
+        $("#global-nav").toggleClass("open");
+        $(".gnav-btn").toggleClass("open");
+        $(this).toggleClass("open");
+    });
+  });
+  $(function(){
+    $(".nav__text").on("click", function () {
+      $("#global-nav").removeClass("open");
+      $(".gnav-btn").removeClass("open");
+      $("#bglayer").removeClass("open");
+    })
+  });
+
+  // スクロールアニメーション
+  $(function(){
+    $(".contact-btn,.nav__text").on("click",function(){
       var target = $($(this).attr("href")).offset().top;
       target -= 70;
       $("html, body").animate({scrollTop: target}, 400);
