@@ -44,14 +44,13 @@ $(document).ready(function(){
 $(function(){
   $('dd[id != "acc1"]').css("display", "none");
   $(".accordion__question").on("click",function(){
-    if(!$(this).hasClass("current-btn")){
-      $(".acc-active").slideUp();
-      $($(this).attr("href")).slideDown();
-      $("dd").removeClass("acc-active");
-      $($(this).attr("href")).addClass("acc-active");
-      $(".accordion__question").removeClass("current-btn");
-      $(this).addClass("current-btn");
-    }
+    if (!$(this).hasClass("current-btn")) {
+            $($(this).attr("href")).slideToggle(300);
+            $(this).addClass("current-btn");
+        } else {
+            $($(this).attr("href")).slideToggle(300);
+            $(this).removeClass("current-btn");
+        }
     return false;
   });
 });
