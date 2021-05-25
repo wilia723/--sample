@@ -598,10 +598,6 @@ img {
   }
 }
 
-.faq {
-  text-align: center;
-}
-
 .faq__inner {
   padding-top: 5.7rem;
   padding-bottom: 8.6rem;
@@ -618,7 +614,13 @@ img {
 
 .accordion__question-wrapper {
   border-bottom: solid 1px #E5E5E5;
-  padding: 2rem 0;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__question-wrapper {
+    text-align: center;
+  }
 }
 
 .accordion__question {
@@ -630,27 +632,18 @@ img {
 .accordion__answer-wrapper {
   background-color: #F2F2F2;
   border-bottom: solid 1px #E5E5E5;
-  height: 9.3rem;
-  padding: 0 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
   .accordion__answer-wrapper {
-    height: auto;
-    padding: 2rem;
+    text-align: center;
   }
 }
 
 .accordion__answer {
   font-size: 1.4rem;
   font-weight: bold;
-  text-align: left;
 }
 
 .blog {
